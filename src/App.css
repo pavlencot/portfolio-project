@@ -1,38 +1,100 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 70%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginContainer, .registerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login, .register {
   display: flex;
   flex-direction: column;
+  width: 350px;
+  height: 100%;
+  gap: 10px;
+  margin: 5%;
+  border: 2px solid #282c34;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: rgb(208, 228, 221);
+}
+
+.topLogin, .topRegister {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.input, .topRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input div{
+  margin-bottom: 10px;
+  height: 10px;
+}
+
+.topLogin a {
+  text-align: left;
+  padding: 5px;
+  padding-left: 0;
+  text-decoration: none;
+  color: rgb(54, 9, 217);
+}
+
+.bottomLogin, .bottomRegister {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.warning {
+  color: rgb(203, 28, 28);
+  display: flex;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.siteNavigation {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 10px;
+}
+
+.siteNavigation a, .bottomLogin button, .bottomLogin a, .bottomRegister a, .bottomRegister button {
+  padding: 8px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(185, 216, 205);
+}
+
+/* .siteNavigation a:hover, .bottomLogin button:hover, .bottomRegister a:hover {
+  background-color: rgb(68, 132, 132);
+  color: aliceblue;
+} */
+
+a:hover, button:hover {
+  background-color: rgb(68, 132, 132);
+  color: aliceblue;
+}
+
+.settingsBar {
+  display: flex;
+  justify-content: flex-end;
+
 }

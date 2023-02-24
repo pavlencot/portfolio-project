@@ -1,0 +1,18 @@
+{
+    "incorrect_email": "Please, enter email or username.",
+    "incorrect_pass": "Please, enter password.",
+    "forgot_pass": "Forgot Password?",
+    "remember": "Remember me",
+    "back": "Back",
+    "signin": "Sign In",
+    "signup": "Sign Up",
+    "email_required": "Email is required",
+    "incorrect_email_format": "Incorrect email format",
+    "password_required": "Password is required",
+    "invalid_password": "Password must have a minimum 8 characters",
+    "confirm_password_required": "Confirm password is required",
+    "invalid_confirm_password": "Confirm password must have a minimum 8 characters",
+    "incorrect_confirm_password": "Password do not match",
+    "weather": "It is {{temperature}}C in {{location}} now.",
+    "error": "Something went wrong "
+}
