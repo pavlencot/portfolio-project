@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { emailValidator, passwordValidator, confirmPasswordValidator, formValidator } from './validations/validators';
 
 const Register = () => {
-  const t = useTranslation();
+  const { t } = useTranslation();
 
   const [form, setForm] = useState({
     email: "",
@@ -119,7 +119,7 @@ const Register = () => {
               </div>}
         </div>
         <div className="bottomRegister">
-          <Link to="/">{t('back')}</Link>
+          <Link to="home">{t('back')}</Link>
           <button id="disabled" type="submit" to="personal_page" disabled>{t('signup')}</button>
         </div>
       </form>

@@ -64,8 +64,8 @@ const LogIn = () => {
                     <input type="checkbox" />
                     <label>{t('remember')}</label>
                 </div>
-                <Link to="/">{t('back')}</Link>
-                <button to="/">{t('signin')}</button>
+                <Link to="home">{t('back')}</Link>
+                <button to="home">{t('signin')}</button>
             </div>
 
         </form>
