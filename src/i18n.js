@@ -11,8 +11,8 @@ i18n
 .use(initReactI18next)
 .use(HttpApi)
 .init({
-    supportedLngs: ['en', 'de'],
-    fallbackLng: 'en',
+    lng: navigator.language,
+    fallbackLng: ['de', 'en'], // Look through these languages and choose the first one that is supported
     debug: true,
     detection: {
         order: ['htmlTag', 'cookie', 'localStorage', 'path', 'subdomain']

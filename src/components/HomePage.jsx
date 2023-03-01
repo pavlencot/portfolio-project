@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const HomePage = (props) => {
+const HomePage = () => {
 const { t } = useTranslation();
 
   const [location, setLocation] = useState(null); 
@@ -10,11 +10,9 @@ const { t } = useTranslation();
   const [weatherCondition, setWeatherCondition] = useState(null);
   const [error, setError] = useState(null);
 
-  const cityParametr = props.city;
-
   useEffect(() => {
     const interval = setInterval(() => {
-      fetch(`http://api.weatherapi.com/v1/current.json?key=682aa6ab1b0949ba9de160616232202&q=${cityParametr}`)
+      fetch(`http://api.weatherapi.com/v1/current.json?key=682aa6ab1b0949ba9de160616232202&q=Zurich`)
       .then(response => response.json())
       .then(
         (data) => {setLocation(data.location.name); 
@@ -30,7 +28,7 @@ const { t } = useTranslation();
     }, 1000)
 
     return () => clearInterval(interval);
-  }, [cityParametr]);
+  }, []);
 
   const checkTemperature = (temperature) => {
     if(temperature > 0) {
